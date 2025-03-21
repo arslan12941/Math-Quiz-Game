@@ -5,7 +5,7 @@ import java.util.Random;
 public class Mathquizimpl extends UnicastRemoteObject implements mathquiz {
     private int score = 0;
     private int currentAnswer = 0;
-    private Random random = new Random();
+    private final Random random = new Random();
 
     protected Mathquizimpl() throws RemoteException {
         super();
